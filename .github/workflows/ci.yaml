@@ -21,5 +21,5 @@ jobs:
 
       - name: Push images
         run: |
-          docker login -u gwenko -p ${{secrets.REGISTRY_PASS}},
+          docker login -u gwenko -p ${{secrets.REGISTRY_PASS}}
           docker push gwenko/portfolio
