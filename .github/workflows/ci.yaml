@@ -19,7 +19,7 @@ jobs:
       - name: Build image
         run: docker build -t gwenko/portfolio .
 
-      - name: Push image
+      - name: Push images
         run: |
-          docker login -u gwenolakomat@gmail.com -p ${{secrets.REGISTRY_PASS}},
+          docker login -u gwenko -p ${{secrets.REGISTRY_PASS}},
           docker push gwenko/portfolio
